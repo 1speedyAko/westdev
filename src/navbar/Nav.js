@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faShoppingCart, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import About from '../pages/About';
+
+
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
