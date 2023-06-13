@@ -9,9 +9,11 @@ function App() {
   return (
     <div>
     <Nav />
+    <BrowserRouter>
      <Routes>
      <Routes path="" element={<Home />}/>
      <Routes path="" element={<About />}/>
+  </BrowserRouter>
     </Routes>
   
 
