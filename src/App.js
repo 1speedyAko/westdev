@@ -8,6 +8,7 @@ import About from "./pages/About"
 function App() {
   return (
     <div>
+    <Nav />
     <BrowserRouter>
      <Routes>
     <Routes path="" element={<Home />}/>
