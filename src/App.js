@@ -8,10 +8,13 @@ import About from "./pages/About"
 function App() {
   return (
     <div>
+    <Nav />
     <BrowserRouter>
-      <Nav />
-      <Home/>
-      <About/>
+     <Routes>
+    <Routes path="" element={<Home />}/>
+     <Routes path="" element={<About />}/>
+    
+    </Routes>
     </BrowserRouter>
 
     </div>
