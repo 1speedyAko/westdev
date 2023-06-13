@@ -9,9 +9,11 @@ function App() {
   return (
     <div>
     <BrowserRouter>
-      <Nav />
-      <Home/>
-      <About/>
+     <Routes>
+    <Routes path="" element={<Home />}/>
+     <Routes path="" element={<About />}/>
+    
+    </Routes>
     </BrowserRouter>
 
     </div>
