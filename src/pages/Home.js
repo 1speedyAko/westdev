@@ -15,7 +15,7 @@ const HomePage = () => {
       <div className="h-screen bg-no-repeat bg-cover " 
       style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className='text-gray-300 text-2xl capitalize font-bold pt-40 px-20 '>nothing down here</h1>
-        <div className='grid grid-cols-2 sm:grid grid-cols-1 px-20 mt-10 font-medium text-slate-100'>
+        <div className='block px-20 mt-10 font-medium text-slate-100'>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
            sed do eiusmo magna aliqua.<br/>Ut enim ad minim veniam, i ut aliquip ex ea commodo consequat <br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
