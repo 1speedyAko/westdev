@@ -10,9 +10,9 @@ import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       
-      <div className="h-screen bg-no-repeat bg-cover " 
+      <div className="h-screen bg-no-repeat bg-cover sm:w-full " 
       style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className='text-gray-300 text-2xl capitalize font-bold pt-40 px-20 '>nothing down here</h1>
         <div className='block px-20 mt-10 font-medium text-slate-100'>
@@ -31,15 +31,15 @@ const HomePage = () => {
           </div>
           <div className='max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 '>
             <div className='border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900'>
-              <p className='relative text-sm font-bold'>
-                <span className='absolute top-0 left-0'>$</span>
+              <p className=' text-sm font-bold z-2'>
+                <span className=' top-0 left-0'>$</span>
                 <span className='text-6xl pl-2'>10.8</span>
-                <span className='font-normal'>per day</span>
+                <span className='font-normal'>per session</span>
               </p>
               
               <div className='py-10'>
                 <h3 className='text-xl font-bold pb-3'>Dog Training</h3>
-                <p className='leading 6'>30 sessions</p>
+                <p className='leading-6'>30 sessions</p>
                 
               </div>
               <ul className='pb-10 space-y-4'>
@@ -61,20 +61,20 @@ const HomePage = () => {
               </ul>
               <Link to='' 
                 className='mt-8 block rounded-lg bg-emerald-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-emerald-700 '>
-                  Buy Now
+                  Get started
               </Link>
               </div>
             {/*card 2*/}
             <div className='border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900'>
-              <p className='relative text-sm font-bold'>
-                <span className='absolute top-0 left-0'>$</span>
-                <span className='text-6xl pl-2'>17.9</span>
+              <p className=' text-sm font-bold'>
+                <span className=' top-0 left-0'>$</span>
+                <span className='text-6xl pl-2'>5</span>
                 <span className='font-normal'>per day</span>
               </p>
               
               <div className='py-10'>
-                <h3 className='text-xl font-bold pb-3'>Handler Training</h3>
-                <p className='leading 6'>60 sessions</p>
+                <h3 className='text-xl font-bold pb-3'>Boarding</h3>
+                <p className='leading 6'>Upon visit</p>
                 
               </div>
               <ul className='pb-10 space-y-4'>
@@ -96,14 +96,14 @@ const HomePage = () => {
               </ul>
               <Link to='' 
                 className='mt-8 block rounded-lg bg-emerald-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-emerald-700 '>
-                  Buy Now
+                  Get started
               </Link>
               </div>
             
             {/*card 3*/}
             <div className='border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900'>
-              <p className='relative text-sm font-bold'>
-                <span className='absolute top-0 left-0'>$</span>
+              <p className=' text-sm font-bold'>
+                <span className=' leading'>$</span>
                 <span className='text-6xl pl-2'>14.3</span>
                 <span className='font-normal'>per sessions</span>
               </p>
@@ -132,7 +132,7 @@ const HomePage = () => {
               </ul>
               <Link to='' 
                 className='mt-8 block rounded-lg bg-emerald-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-emerald-700 '>
-                  Buy Now
+                 Get started
               </Link>
               </div>
              
