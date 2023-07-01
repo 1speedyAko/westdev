@@ -1,18 +1,28 @@
 import React from 'react';
 import Navbar from '../navbar/Nav';
+import Footer from '../navbar/Footer'
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 import backgroundImage from '../assets/belgian.jpeg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark } from "@fortawesome/free-solid-svg-icons";
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import { faBookmark,faDog,faUsers,faClock  } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
+
+import { useState } from "react";
 
 
 const HomePage = () => {
+
+  const[counterOn, setCounterOn] = useState(false)
+
+ 
+
   return (
     <div>
       <Navbar />
       
-      <div className="h-screen bg-no-repeat bg-cover sm:w-full " 
+      <div className="h-screen bg-no-repeat bg-cover w-full  " 
       style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className='text-gray-300 text-2xl capitalize font-bold pt-40 px-20 '>nothing down here</h1>
         <div className='block px-20 mt-10 font-medium text-slate-100'>
@@ -21,7 +31,7 @@ const HomePage = () => {
 
         </div>
       </div>
-      <div className='bg-slate-800 text-white'>
+      <div className='bg-slate-800 to emerald-200 text-white pb-10'>
         {/*cards go here*/}
         <section>
           {/*card 1*/}
@@ -135,12 +145,62 @@ const HomePage = () => {
                  Get started
               </Link>
               </div>
-             
           </div>
         </section>
       </div>
-    </div>
-  );
-};
+     <div className='p-20 px-10 bg-emerald-200 grid lg:grid-cols-3 md:grid-cols-2  gap-10 '>
+      <div >
+       <h1 className='text-center'> background story</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div>
+       <h1 className='text-center'> background story</h1>
+       <p>Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. Congue quisque egestas diam in.<br/> Praesent semper feugiat nibh sed. Viverra orci sagittis eu volutpat odio facilisis. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Nullam vehicula ipsum a arcu. Nisi quis eleifend quam adipiscing vitae proin. Volutpat blandit aliquam etiam erat velit scelerisque in. Velit egestas dui id ornare arcu odio ut sem nulla. Ut sem viverra aliquet eget sit amet.</p>
+      </div>
+      <div >
+       <h1 className='text-center'> background story</h1>
+       <p>Egestas dui id ornare arcu odio. Imperdiet massa tincidunt nunc pulvinar sapien et. <br/>Consequat nisl vel pretium lectus quam. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Tellus rutrum tellus pellentesque eu tincidunt. Pharetra magna ac placerat vestibulum lectus. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Elementum eu facilisis sed odio morbi quis commodo odio aenean. </p>
+      </div>
+     </div> 
+     <div className='bg-gray-700 p-30 grid lg:grid-cols-3 md:grid-cols-2 gap-10 py-10'>
+       <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit = {()=>setCounterOn(false)} className='' >
+        <div className="flex flex-col items-center relative">
+            <p className="order-1 text-5xl text-orange-400 ">Happy Clients</p>
+            <FontAwesomeIcon icon={faUsers} className="order-2 text-5xl text-white p-6" />
+            <div className='text-3xl text-white '>
+            { counterOn && <CountUp start = {0} end = {60}  duration = {2} delay={0} className="order-3 text-4xl font-bold"/> } 
+            <span className='absolute'>+</span>
+            </div>
+          </div>
+       </ScrollTrigger>
+       <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit = {()=>setCounterOn(false)} className='' >
+          <div className="flex flex-col items-center">
+            <p className="order-1 text-5xl text-orange-400 ">Adoptions</p>
+            <FontAwesomeIcon icon={faDog} className="order-2 text-5xl text-white p-6" />
+            <div className='text-3xl text-white '>
+            { counterOn && <CountUp start = {0} end = {30}  duration = {2} delay={0} className="order-3 text-4xl font-bold"/> } 
+            <span className='absolute'>+</span>
+            </div>
+          </div>
+       </ScrollTrigger>
+       <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit = {()=>setCounterOn(false)} className='' >
+          <div className="flex flex-col items-center">
+            <p className="order-1 text-5xl text-orange-400 text-center "> Years Of Expirience</p>
+            <FontAwesomeIcon icon={faClock} className="order-2 text-5xl text-white p-6 " />
+            <div className='text-3xl text-white '>
+            { counterOn && <CountUp start = {0} end = {5}  duration = {5} delay={0} className="order-3 text-4xl font-bold "/> } 
+            <span className='absolute'>+</span>
+            </div>
+          </div>
+        </ScrollTrigger>
+        
+
+       </div>
+          <Footer/>
+   </div>
+  
+   );
+  };
+
 
 export default HomePage;
