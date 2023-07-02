@@ -7,9 +7,9 @@ import backgroundImage from '../assets/belgian.jpeg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark,faDog,faUsers,faClock  } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
-
-
 import { useState } from "react";
+import { register } from 'swiper/element/bundle';
+register();
 
 
 const HomePage = () => {
@@ -69,7 +69,7 @@ const HomePage = () => {
        </ScrollTrigger>
        <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit = {()=>setCounterOn(false)} className='' >
           <div className="flex flex-col items-center">
-            <p className="order-1 text-5xl text-emerald-400 text-center "> Years Of Expirience</p>
+            <p className="order-1 text-5xl text-emerald-400 text-center "> Years Of Experience</p>
             <FontAwesomeIcon icon={faClock} className="order-2 text-6xl text-blue-500 p-9 " />
             <div className='order-3 text-3xl text-white '>
             { counterOn && <CountUp start = {0} end = {5}  duration = {5} delay={0} className=" text-4xl font-bold "/> } 
@@ -79,15 +79,15 @@ const HomePage = () => {
           
         </ScrollTrigger>
        </div>
-      <div className='bg-slate-800'>
-       <h1 className='text-emerald-400 text-3xl text-center p-8'>Our Services</h1> 
-       <div className='grid lg:grid-cols-4 text-white text-center text-2xl py-8 '> 
+      <div className='bg-emerald-200'>
+       <h1 className='text-black text-3xl text-center p-8 font-bold'>Our Services</h1> 
+       <div className='grid lg:grid-cols-4 text-black text-center text-2xl  '> 
         <div >
           <h1>Dog Grooming</h1>
-          <p className='text-xl py-8'>zxczcsd </p>
+          <p className='text-xl '>zxczcsd </p>
         </div>
         <div>
-          <h1 className='text-xl py-8'>Dog Training</h1>
+          <h1 className='text-xl '>Dog Training</h1>
           <p>ccc</p>
         </div>
         <div>
@@ -217,7 +217,16 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-    <div><h1>testimonials</h1></div>
+    <div className='bg-slate-800'>
+      <h1>testimonials</h1>
+      <div className='bg-slate-200'>
+      <swiper-container>
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+      </swiper-container>
+      </div>
+    </div>
           <Footer/>
    </div>
   
