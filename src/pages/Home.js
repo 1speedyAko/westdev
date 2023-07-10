@@ -19,10 +19,10 @@ const HomePage = () => {
  
 
   return (
-    <div>
+    <div className='w-full'>
       <Navbar />
       
-      <div className="h-screen bg-no-repeat bg-cover lg:w-full  md:w-full sm:w-full " 
+      <div className="h-screen bg-no-repeat bg-cover  " 
       style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className='text-gray-300 text-2xl capitalize font-bold pt-40 px-20 '>nothing down here</h1>
         <div className='block px-20 mt-10 font-medium text-slate-100'>
@@ -69,7 +69,7 @@ const HomePage = () => {
        </ScrollTrigger>
        <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit = {()=>setCounterOn(false)} className='' >
           <div className="flex flex-col items-center">
-            <p className="order-1 text-5xl text-emerald-400 text-center "> Years Of Experience</p>
+            <p className="order-1 text-5xl text-emerald-400 text-center "> Years</p>
             <FontAwesomeIcon icon={faClock} className="order-2 text-6xl text-blue-500 p-9 " />
             <div className='order-3 text-3xl text-white '>
             { counterOn && <CountUp start = {0} end = {5}  duration = {5} delay={0} className=" text-4xl font-bold "/> } 
@@ -79,8 +79,8 @@ const HomePage = () => {
           
         </ScrollTrigger>
        </div>
-      <div className='bg-emerald-200'>
-       <h1 className='text-black text-3xl text-center p-8 font-bold'>Our Services</h1> 
+      <div className='bg-emerald-200 py-8'>
+       <h1 className='text-black text-3xl text-center pb-8 font-bold'>Our Services</h1> 
        <div className='grid lg:grid-cols-4 text-black text-center text-2xl  '> 
         <div >
           <h1>Dog Grooming</h1>
