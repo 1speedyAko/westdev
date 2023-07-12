@@ -67,11 +67,10 @@ const Navbar = () => {
                   className={`origin-top-right pl-10 bg-gray-200 absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition duration-500 transform ${isDropdownOpen ? 'scale-y-100' : 'scale-y-0'}`}
                 >
                   <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                    <Link to="/services/product1" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Product 1</Link>
-                    <Link to="/services/product2" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Product 2</Link>
-                    <Link to="/services/product3" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Product 3</Link>
-                    <Link to="/services/product4" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Product 4</Link>
-                    <Link to="/services/product5" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Product 5</Link>
+                    <Link to="/services/product1" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Dog Grooming</Link>
+                    <Link to="/services/product2" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Dog Breeding</Link>
+                    <Link to="/services/product3" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Dog Training</Link>
+                    <Link to="/services/product4" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Handler Training</Link>
                   </div>
                 </div>
               </div>

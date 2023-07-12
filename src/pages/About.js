@@ -22,7 +22,7 @@ const AboutPage = () => {
           <figure class="md:flex  rounded-xl p-8 md:p-0 ">
            <a href="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" target="_blank" rel="noopener noreferrer">
             <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
-            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"  width="384" height="512" /> 
+            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"   /> 
              
            </a>
             <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
