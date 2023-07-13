@@ -33,12 +33,14 @@ const Card = ({ info }) => {
         sx={{
           display: "grid",
           gridTemplateColumns: "1fr 3fr",
+          height: "100%",
+          flexGrow: 1,
           "@media (max-width: 600px)": {
             display: "grid",
             gridTemplateColumns: "1fr ",
           },
         }}
-        class="md:flex h-full  rounded-xl p-8 md:p-0">
+        class="md:flex rounded-xl p-8 md:p-0">
         <Stack
           sx={{
             "@media (max-width: 600px)": {
