@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Nav";
 import Carousel from "../components/Carousel";
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 
 const infoList = [
   {
@@ -29,14 +29,31 @@ const infoList = [
 const Card = ({ info }) => {
   return (
     <div className="border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900 ">
-      <figure class="md:flex h-full  rounded-xl p-8 md:p-0 flex">
-        <div className="h-full w-full items-center content-center flex">
+      <Stack
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "1fr 3fr",
+          "@media (max-width: 600px)": {
+            display: "grid",
+            gridTemplateColumns: "1fr ",
+          },
+        }}
+        class="md:flex h-full  rounded-xl p-8 md:p-0">
+        <Stack
+          sx={{
+            "@media (max-width: 600px)": {
+              maxWidth: "60%",
+              marginRight: "auto",
+              marginLeft: "auto",
+            },
+          }}
+          className="h-full w-full items-center content-center flex">
           <img
             class="w-full h-3/6 md:w-48 md:rounded-none  mt-auto mb-auto"
             src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg"
             alt="Man"
           />
-        </div>
+        </Stack>
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
             <p class="text-lg font-medium">{info.p}</p>
@@ -46,7 +63,7 @@ const Card = ({ info }) => {
             <div class="text-slate-700 dark:text-slate-500">{info.role}</div>
           </figcaption>
         </div>
-      </figure>
+      </Stack>
     </div>
   );
 };
