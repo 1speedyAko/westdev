@@ -1,8 +1,21 @@
-import React from 'react';
-import { faHome, faInfoCircle, faShoppingCart, faEnvelope, faPhone, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram, faTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import React from "react";
+import {
+  faHome,
+  faInfoCircle,
+  faShoppingCart,
+  faEnvelope,
+  faPhone,
+  faAddressCard,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,7 +27,6 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Useful Links</h4>
             <ul className="list-none">
               <li className="mb-2">
-                
                 <Link to="/" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faHome} className="mr-2" />
                   Home
@@ -62,14 +74,16 @@ const Footer = () => {
           </div>
           {/* Newsletter */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Subscribe to Our Newsletter</h4>
+            <h4 className="text-lg font-bold mb-4">
+              Subscribe to Our Newsletter
+            </h4>
             <form action="" method="post" className="flex">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="py-2 px-4 rounded-l-md focus:outline-none text-black"
+                className="py-2 px-auto first-line:rounded-l-md focus:outline-none text-black"
               />
-              <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-r-md focus:outline-none">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-auto rounded-r-md focus:outline-none">
                 Subscribe
               </button>
             </form>
@@ -77,21 +91,36 @@ const Footer = () => {
         </div>
         {/* Social Media Links */}
         <div className="flex justify-end mt-8">
-          <a href="#" className="mr-4">
-            <FontAwesomeIcon icon={faFacebook} className="text-white text-2xl hover:text-gray-400" />
-          </a>
-          <a href="#" className="mr-4">
-            <FontAwesomeIcon icon={faInstagram} className="text-white text-2xl hover:text-gray-400" />
-          </a>
-          <a href="#" className="mr-4">
-            <FontAwesomeIcon icon={faTwitter} className="text-white text-2xl hover:text-gray-400" />
-          </a>
-          <a href="#" className="mr-4">
-            <FontAwesomeIcon icon={faYoutube} className="text-white text-2xl hover:text-gray-400" />
-          </a>
-          <a href="#">
-            <FontAwesomeIcon icon={faLinkedin} className="text-white text-2xl hover:text-gray-400" />
-          </a>
+          <Link to="/about" className="mr-4">
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className="text-white text-2xl hover:text-gray-400"
+            />
+          </Link>
+          <Link href="#" className="mr-4">
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="text-white text-2xl hover:text-gray-400"
+            />
+          </Link>
+          <Link href="#" className="mr-4">
+            <FontAwesomeIcon
+              icon={faTwitter}
+              className="text-white text-2xl hover:text-gray-400"
+            />
+          </Link>
+          <Link href="#" className="mr-4">
+            <FontAwesomeIcon
+              icon={faYoutube}
+              className="text-white text-2xl hover:text-gray-400"
+            />
+          </Link>
+          <Link href="#">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="text-white text-2xl hover:text-gray-400"
+            />
+          </Link>
         </div>
       </div>
     </footer>
