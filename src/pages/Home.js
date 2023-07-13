@@ -63,11 +63,7 @@ const HomePage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             <br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
+            
           </p>
         </div>
         <div>
@@ -77,10 +73,7 @@ const HomePage = () => {
             Congue quisque egestas diam in.
             <br /> Praesent semper feugiat nibh sed. Viverra orci sagittis eu
             volutpat odio facilisis. Mattis vulputate enim nulla aliquet
-            porttitor lacus luctus accumsan. Nullam vehicula ipsum a arcu. Nisi
-            quis eleifend quam adipiscing vitae proin. Volutpat blandit aliquam
-            etiam erat velit scelerisque in. Velit egestas dui id ornare arcu
-            odio ut sem nulla. Ut sem viverra aliquet eget sit amet.
+           
           </p>
         </div>
         <div>
@@ -89,12 +82,7 @@ const HomePage = () => {
             Egestas dui id ornare arcu odio. Imperdiet massa tincidunt nunc
             pulvinar sapien et. <br />
             Consequat nisl vel pretium lectus quam. Vestibulum mattis
-            ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.
-            Tellus rutrum tellus pellentesque eu tincidunt. Pharetra magna ac
-            placerat vestibulum lectus. Tempor orci eu lobortis elementum nibh
-            tellus molestie nunc. Turpis egestas pretium aenean pharetra magna
-            ac placerat vestibulum lectus. Elementum eu facilisis sed odio morbi
-            quis commodo odio aenean.{" "}
+           
           </p>
         </div>
       </div>
