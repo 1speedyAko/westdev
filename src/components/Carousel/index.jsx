@@ -4,7 +4,7 @@ import React from "react"
 const Carousel = ()=>{
     return(
         <>
-        <div className="relative h-56  rounded-none md:h-96 bg-white  " data-carousel="slide">
+        {/* <div className="relative h-56  rounded-none md:h-96 bg-white  " data-carousel="slide">
          
          <div className="hidden duration-700 ease-in-out" data-carousel-item>
              <p className="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae incidunt dolorem cupiditate sunt, obcaecati ratione iure provident officiis eius unde aliquid possimus exercitationem nesciunt, voluptates quaerat alias corrupti quibusdam facere.</p>
@@ -50,7 +50,7 @@ const Carousel = ()=>{
              </svg>
              <span className="sr-only">Next</span>
          </span>
-     </button>
+     </button> */}
 
         </>
     )
