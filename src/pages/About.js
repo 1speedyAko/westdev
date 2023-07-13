@@ -1,10 +1,12 @@
 import React from 'react';
 import Navbar from '../navbar/Nav';
+import Carousel from '../components/Carousel';
 
 const AboutPage = () => {
   return (
     <div >
       <Navbar/>
+     
       <div className=' py-20 z-8 w-full text-white pb-10 bg-slate-800'> 
         <h1 className='text-center text-4xl mb-4 py-10'>about page</h1>
           <div className='3/4-h text-center px-3'>
@@ -21,7 +23,7 @@ const AboutPage = () => {
           <div className='border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900'>
           <figure class="md:flex  rounded-xl p-8 md:p-0 ">
            <a href="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" target="_blank" rel="noopener noreferrer">
-            <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
+            <img class="w-50 h-auto md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
             src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"   /> 
              
            </a>
@@ -47,8 +49,8 @@ const AboutPage = () => {
           <div className='border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900'>
           <figure class="md:flex  rounded-xl p-8 md:p-0 ">
           <a href="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" target="_blank" rel="noopener noreferrer">
-            <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
-            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"  width="384" height="512" /> 
+            <img class="w-50 h-auto md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
+            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"  width="500" height="auto" /> 
              
            </a>
             <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -75,8 +77,8 @@ const AboutPage = () => {
           <div className='border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900'>
           <figure class="md:flex  rounded-xl p-8 md:p-0 ">
           <a href="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" target="_blank" rel="noopener noreferrer">
-            <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
-            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"  width="384" height="512" /> 
+            <img class="w-50 h-auto md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
+            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"  width="384" height="auto" /> 
              
            </a>
             <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -101,8 +103,8 @@ const AboutPage = () => {
           <div className='border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900'>
           <figure class="md:flex  rounded-xl p-8 md:p-0 ">
           <a href="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" target="_blank" rel="noopener noreferrer">
-            <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
-            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"  width="384" height="512" /> 
+            <img class="w-50 h-auto git  md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
+            src="https://ioanaradu.com/wp-content/uploads/2016/03/man-Javier-Bardem-suit.jpg" alt="Man"  width="384" height="auto" /> 
              
            </a>
             <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -125,8 +127,9 @@ const AboutPage = () => {
           </figure>
           </div>
           </div>
-
+          
       </div>
+      <Carousel />
     </div>
   );
 };

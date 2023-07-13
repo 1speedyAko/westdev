@@ -133,19 +133,16 @@ const Navbar = () => {
       {isServicesDropdownOpen && (
         <div className="pl-5 ">
           <Link to="/services/product1" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-            Product 1
+           Dog Grooming
           </Link>
           <Link to="/services/product2" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-            Product 2
+          Dog Breeding
           </Link>
           <Link to="/services/product3" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-            Product 3
+          Dog Training
           </Link>
           <Link to="/services/product4" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-            Product 4
-          </Link>
-          <Link to="/services/product5" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-            Product 5
+          Handler Training
           </Link>
         </div>
       )}

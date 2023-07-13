@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark,faDog,faUsers,faClock  } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
-import { register } from 'swiper/element/bundle';
-register();
+import Carousel from '../components/Carousel'
+
 
 
 const HomePage = () => {
@@ -19,7 +19,7 @@ const HomePage = () => {
  
 
   return (
-    <div className='w-full'>
+    <div className='w-full bg-slate-800'>
       <Navbar />
       
       <div className="h-screen bg-no-repeat bg-cover  " 
@@ -218,14 +218,15 @@ const HomePage = () => {
         </section>
       </div>
     <div className='bg-slate-800'>
-      <h1>testimonials</h1>
-      <div className='bg-slate-200'>
-      <swiper-container>
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-      </swiper-container>
-      </div>
+        <div className='grid grid-cols-2'>
+          <div>
+            <p>image here</p>
+          </div>
+          <div className='bg-slate-200'>
+          <h1 className='text-center text-xl text-bold text-black'>testimonials</h1>
+          <Carousel />
+          </div>
+        </div>
     </div>
           <Footer/>
    </div>
