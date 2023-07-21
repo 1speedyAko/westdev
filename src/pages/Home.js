@@ -19,12 +19,16 @@ import { Paper, Button } from "@mui/material";
 
 function Item(props) {
   return (
-    <Paper>
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
-
-      <Button className="CheckButton">Check it out!</Button>
+    <Paper className='bg-emerald-200 text-center'>
+      <blockquote>
+      <p className="bg-emerald-200  text-black-500 dark:text-black">{props.item.description}</p>
+      </blockquote>
+      <figcaption class="bg-emerald-200 ">
+        <div class="text-black dark:text-black">{props.item.name}</div>
+        <div class="text-emerald-700 dark:text-emerald-500">{props.item.role}</div>
+      </figcaption>
     </Paper>
+      
   );
 }
 
@@ -39,7 +43,7 @@ const HomePage = () => {
         className="h-screen bg-no-repeat bg-cover  "
         style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className="text-gray-300 text-2xl capitalize font-bold pt-40 px-20 ">
-          nothing down here
+          Who are we?
         </h1>
         <div className="block px-20 mt-10 font-medium text-slate-100">
           <p>
@@ -167,22 +171,22 @@ const HomePage = () => {
         <h1 className="text-black text-3xl text-center pb-8 font-bold">
           Our Services
         </h1>
-        <div className="grid lg:grid-cols-4 text-black text-center text-2xl  ">
+        <div className="grid lg:grid-cols-4 text-black text-center text-xl gap-7 ">
           <div>
-            <h1>Dog Grooming</h1>
-            <p className="text-xl ">zxczcsd </p>
+            <h1 className="text-2xl ">Dog Grooming</h1>
+            <p >some text here about Dog Grooming</p>
           </div>
           <div>
-            <h1 className="text-xl ">Dog Training</h1>
-            <p>ccc</p>
+            <h1 className="text-2xl ">Dog Training</h1>
+            <p>some text here about Dog Training </p>
           </div>
           <div>
-            <h1>Handler Training</h1>
-            <p>kjckas</p>
+            <h1 className="text-2xl ">Handler Training</h1>
+            <p>some text here about Handler Training</p>
           </div>
           <div>
-            <h1>Dog Breeding</h1>
-            <p>kjhdask</p>
+            <h1 className="text-2xl ">Dog Breeding</h1>
+            <p>some text here about Dog Breeding </p>
           </div>
         </div>
       </div>
@@ -302,33 +306,46 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-      <div className="bg-slate-800">
-        <div className="grid grid-cols-2">
+       <div className='h-3/4'>
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 ">
           <div>
-            <p>image here</p>
+            <img 
+            className="w-full"
+            src="https://images.pexels.com/photos/1906153/pexels-photo-1906153.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="dog"
+            />
           </div>
-          <div className="bg-slate-200">
-            <h1 className="text-center text-xl text-bold text-black">
-              testimonials
+          <div className="bg-emerald-200 w-full sm:h-25">
+            <h1 className="text-center text-3xl font-bold text-black pt-20 pb-10">
+              Testimonials
             </h1>
-            <Carousel>
+            <Carousel className="bg-emerald-200 ">
               {[
                 {
-                  name: "Random Name #1",
-                  description:
-                    "Probably the most random thing you have ever seen!",
+                  name: "Fred Oguta",
+                  description:"some txt here about customer feedback and satisfaction",
+                    
+                  role:"Engineer",
+
                 },
                 {
-                  name: "Random Name #2",
-                  description: "Hello World!",
+                  name: "Collins Omae",
+                  description: "some txt here about customer feedback and satisfaction",
+                  role:"Driver",
                 },
+                {
+                  name: "John Doe",
+                  description: "some txt here about customer feedback and satisfacti",
+                  role:"Rancher",
+                }
+
               ].map((item, i) => (
                 <Item key={i} item={item} />
               ))}
             </Carousel>
           </div>
         </div>
-      </div>
+       </div>
       <Footer />
     </div>
   );
