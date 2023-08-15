@@ -39,10 +39,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">
+                <Link to ="shop" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                   Shop
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -5,6 +5,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Shop from "./shop/shop";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "services",
     element: <App />,
   },
+  {
+    path:"shop",
+    element:<Shop/>
+  }
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
