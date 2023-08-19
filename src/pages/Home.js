@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Nav";
 import Footer from "../navbar/Footer";
+import Card from "./Card"
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import backgroundImage from "../assets/belgian.jpeg";
@@ -16,6 +17,7 @@ import { useState } from "react";
 
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@mui/material";
+
 
 function Item(props) {
   return (
@@ -40,7 +42,7 @@ const HomePage = () => {
       <Navbar />
 
       <div
-        className="h-screen bg-no-repeat bg-cover  "
+        className="h-screen bg-no-repeat bg-cover aspect-w-4 aspect-h-5  "
         style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className="text-gray-300 text-2xl capitalize font-bold pt-40 px-20 ">
           Who are we?
@@ -200,110 +202,10 @@ const HomePage = () => {
               Get affordable pricing
             </h1>
           </div>
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 ">
-            <div className="border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900">
-              <p className=" text-sm font-bold z-2">
-                <span className=" top-0 left-0">$</span>
-                <span className="text-6xl pl-2">10.8</span>
-                <span className="font-normal">per session</span>
-              </p>
-
-              <div className="py-10">
-                <h3 className="text-xl font-bold pb-3">Dog Training</h3>
-                <p className="leading-6">30 sessions</p>
-              </div>
-              <ul className="pb-10 space-y-4">
-                <li className="flex items-center text-sm leading 6">
-                  <FontAwesomeIcon
-                    icon={faBookmark}
-                    className="text-blue-500 text-xl mr-2 hover:text-blue-700 "
-                  />
-                  Protection Work
-                </li>
-                <li className="flex items-center text-sm leading 6">
-                  <FontAwesomeIcon
-                    icon={faBookmark}
-                    className="text-blue-500 text-xl mr-2 hover:text-blue-700 "
-                  />
-                  Behaviour And Socialization
-                </li>
-              </ul>
-              <Link
-                to=""
-                className="mt-8 block rounded-lg bg-blue-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-blue-700 ">
-                Get started
-              </Link>
-            </div>
-            {/*card 2*/}
-            <div className="border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900">
-              <p className=" text-sm font-bold">
-                <span className=" top-0 left-0">$</span>
-                <span className="text-6xl pl-2">5</span>
-                <span className="font-normal">per day</span>
-              </p>
-
-              <div className="py-10">
-                <h3 className="text-xl font-bold pb-3">Boarding</h3>
-                <p className="leading 6">Upon visit</p>
-              </div>
-              <ul className="pb-10 space-y-4">
-                <li className="flex items-center text-sm leading 6">
-                  <FontAwesomeIcon
-                    icon={faBookmark}
-                    className="text-blue-500 text-xl mr-2 hover:text-blue-700 "
-                  />
-                  Dog Management
-                </li>
-                <li className="flex items-center text-sm leading 6">
-                  <FontAwesomeIcon
-                    icon={faBookmark}
-                    className="text-blue-500 text-xl mr-2 hover:text-blue-700 "
-                  />
-                  Dog Handling
-                </li>
-              </ul>
-              <Link
-                to=""
-                className="mt-8 block rounded-lg bg-blue-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-blue-700 ">
-                Get started
-              </Link>
-            </div>
-
-            {/*card 3*/}
-            <div className="border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900">
-              <p className=" text-sm font-bold">
-                <span className=" leading">$</span>
-                <span className="text-6xl pl-2">14.3</span>
-                <span className="font-normal">per sessions</span>
-              </p>
-
-              <div className="py-10">
-                <h3 className="text-xl font-bold pb-3">Dog Grooming</h3>
-                <p className="leading 6"> Upon visit</p>
-              </div>
-              <ul className="pb-10 space-y-4">
-                <li className="flex items-center text-sm leading 6">
-                  <FontAwesomeIcon
-                    icon={faBookmark}
-                    className="text-blue-500 text-xl mr-2 hover:text-blue-500 "
-                  />
-                  Full Grooming
-                </li>
-                <li className="flex items-center text-sm leading 6">
-                  <FontAwesomeIcon
-                    icon={faBookmark}
-                    className="text-blue-500 text-xl mr-2 hover:text-blue-500 "
-                  />
-                  Basic Grooming
-                </li>
-              </ul>
-              <Link
-                to=""
-                className="mt-8 block rounded-lg bg-blue-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-blue-700 ">
-                Get started
-              </Link>
-            </div>
+          <div>
+            <Card/>
           </div>
+          
         </section>
       </div>
        <div className='h-3/4'>

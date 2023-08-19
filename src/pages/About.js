@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../navbar/Nav";
-import Carousel from "../components/Carousel";
-import { Stack, Typography } from "@mui/material";
+import { Stack} from "@mui/material";
 import Footer from "../navbar/Footer"
 
 const infoList = [

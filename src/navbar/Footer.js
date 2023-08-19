@@ -1,9 +1,10 @@
 import React from "react";
+
 import {
   faHome,
   faInfoCircle,
   faShoppingCart,
-  faEnvelope,
+  faImages,
   faPhone,
   faAddressCard,
 } from "@fortawesome/free-solid-svg-icons";
@@ -42,6 +43,12 @@ const Footer = () => {
                 <Link to ="shop" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                   Shop
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link to ="gallery" className="hover:text-gray-400">
+                <FontAwesomeIcon icon={faImages} className="mr-2" />
+                  Gallery
                 </Link>
               </li>
             </ul>

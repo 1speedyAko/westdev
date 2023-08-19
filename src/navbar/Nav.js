@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
+  
   faShoppingCart,
   faAngleDown,
+
+
 } from "@fortawesome/free-solid-svg-icons";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -41,6 +43,11 @@ const Navbar = () => {
                 to="/about"
                 className="text-gray-300 text-xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 About
+              </Link>
+              <Link
+                to="/gallery"
+                className="text-gray-300 text-xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                Gallery
               </Link>
               <Link
                 to="/shop"

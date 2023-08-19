@@ -3,9 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Shop from "./shop/shop";
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,7 +26,12 @@ const router = createBrowserRouter([
   {
     path:"shop",
     element:<Shop/>
-  }
+  },
+  {
+    path:"gallery",
+    element:<Gallery/>
+  },
+ 
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
