@@ -34,19 +34,19 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="about" className="hover:text-gray-400">
+                <Link to="/about" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
                   About
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to ="shop" className="hover:text-gray-400">
+                <Link to ="/shop" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                   Shop
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to ="gallery" className="hover:text-gray-400">
+                <Link to ="/gallery" className="hover:text-gray-400">
                 <FontAwesomeIcon icon={faImages} className="mr-2" />
                   Gallery
                 </Link>
@@ -84,11 +84,11 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">
               Subscribe to Our Newsletter
             </h4>
-            <form action="" method="post" className="flex">
+            <form action="" method="post" className="flex ">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="py-2 px-auto first-line:rounded-l-md focus:outline-none text-black"
+                className="py-2 px-auto first-line:rounded-l-md focus:outline-none text-black rounded-l-lg "
               />
               <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-auto rounded-r-md focus:outline-none">
                 Subscribe

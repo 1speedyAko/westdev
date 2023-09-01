@@ -6,7 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Shop from "./shop/shop";
+import Shop from "./shop/Shop";
+import SignUp from "./shop/Signup.JS";
+import SignIn from "./shop/Login";
 
 
 
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
     path:"gallery",
     element:<Gallery/>
   },
+  {
+    path:"signIn",
+    element:<SignIn/>
+  },
+  {
+    path:"signUp",
+    element:<SignUp/>
+  }
  
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
