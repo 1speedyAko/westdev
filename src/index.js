@@ -12,6 +12,7 @@ import SignIn from "./shop/Login";
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +41,8 @@ const router = createBrowserRouter([
   {
     path:"signUp",
     element:<SignUp/>
-  }
+  },
+  
  
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
