@@ -6,10 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Shop from "./shop/Shop";
 import Register from './shop/Register'
 import SignIn from "./shop/Login";
-
+import Shop from '../src/shop/Shop'
 
 
 
