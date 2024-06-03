@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Gallery from "./pages/Gallery";
-import About from "./pages/About";
+// import Gallery from "./pages/Gallery";
+// import About from "./pages/About";
 import Home from "./pages/Home";
-import Register from './shop/Register'
-import SignIn from "./shop/Login";
+// import Register from './shop/Register'
+// import SignIn from "./shop/Login";
 // import Shop from './shop/Shop'
 
 
@@ -17,31 +17,31 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "services",
-    element: <App />,
-  },
-  {
-    path:"shop",
-    // element:<Shop/>
-    element: <h1>Hello world</h1>
-  },
-  {
-    path:"gallery",
-    element:<Gallery/>
-  },
-  {
-    path:"signIn",
-    element:<SignIn/>
-  },
-  {
-    path:'Register',
-    element:<Register/>
-  }, 
+  // {
+  //   path: "about",
+  //   element: <About />,
+  // },
+  // {
+  //   path: "services",
+  //   element: <App />,
+  // },
+  // {
+  //   path:"shop",
+  //   // element:<Shop/>
+  //   element: <h1>Hello world</h1>
+  // },
+  // {
+  //   path:"gallery",
+  //   element:<Gallery/>
+  // },
+  // {
+  //   path:"signIn",
+  //   element:<SignIn/>
+  // },
+  // {
+  //   path:'Register',
+  //   element:<Register/>
+  // }, 
   
  
 ]);
