@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Register from './shop/Register'
 import SignIn from "./shop/Login";
-import Shop from './shop/Shop'
+// import Shop from './shop/Shop'
 
 
 
@@ -27,7 +27,8 @@ const router = createBrowserRouter([
   },
   {
     path:"shop",
-    element:<Shop/>
+    // element:<Shop/>
+    element: <h1>Hello world</h1>
   },
   {
     path:"gallery",
