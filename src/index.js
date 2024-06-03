@@ -7,7 +7,7 @@ import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Shop from "./shop/Shop";
-import SignUp from "./shop/Signup.JS";
+import Register from './shop/Register'
 import SignIn from "./shop/Login";
 
 
@@ -39,9 +39,9 @@ const router = createBrowserRouter([
     element:<SignIn/>
   },
   {
-    path:"signUp",
-    element:<SignUp/>
-  },
+    path:'Register',
+    element:<Register/>
+  }, 
   
  
 ]);

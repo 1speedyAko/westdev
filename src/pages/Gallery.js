@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../navbar/Nav';
 import Footer from '../navbar/Footer';
-import Card from '../pages/Card';
+
 
 const Gallery = () => {
     return(

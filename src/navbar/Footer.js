@@ -1,22 +1,8 @@
 import React from "react";
-
-import {
-  faHome,
-  faInfoCircle,
-  faShoppingCart,
-  faImages,
-  faPhone,
-  faAddressCard,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-  faYoutube,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faHome, faInfoCircle, faShoppingCart, faImages, faPhone, faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram, faTwitter, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Corrected import statement
 
 const Footer = () => {
   return (
@@ -34,20 +20,20 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/about" className="hover:text-gray-400">
+                <Link to="#" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
                   About
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to ="/shop" className="hover:text-gray-400">
+                <Link to="#" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                   Shop
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to ="/gallery" className="hover:text-gray-400">
-                <FontAwesomeIcon icon={faImages} className="mr-2" />
+                <Link to="#" className="hover:text-gray-400">
+                  <FontAwesomeIcon icon={faImages} className="mr-2" />
                   Gallery
                 </Link>
               </li>
@@ -68,22 +54,20 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Contact</h4>
             <p>
               <FontAwesomeIcon icon={faAddressCard} className="mr-2" />
-              sondu,kisumu City
+             Sondu,Kisumu City
             </p>
             <p className="mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
-              +254024832
+              0702802588
             </p>
             <p className="mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
-              +254024832
+              0743833555
             </p>
           </div>
           {/* Newsletter */}
           <div>
-            <h4 className="text-lg font-bold mb-4">
-              Subscribe to Our Newsletter
-            </h4>
+            <h4 className="text-lg font-bold mb-4">Subscribe to Our Newsletter</h4>
             <form action="" method="post" className="flex ">
               <input
                 type="email"
@@ -98,31 +82,31 @@ const Footer = () => {
         </div>
         {/* Social Media Links */}
         <div className="flex justify-end mt-8">
-          <Link to="/about" className="mr-4">
+          <Link to="#" className="mr-4">
             <FontAwesomeIcon
               icon={faFacebook}
               className="text-white text-2xl hover:text-gray-400"
             />
           </Link>
-          <Link href="#" className="mr-4">
+          <Link to="#" className="mr-4">
             <FontAwesomeIcon
               icon={faInstagram}
               className="text-white text-2xl hover:text-gray-400"
             />
           </Link>
-          <Link href="#" className="mr-4">
+          <Link to="#" className="mr-4">
             <FontAwesomeIcon
               icon={faTwitter}
               className="text-white text-2xl hover:text-gray-400"
             />
           </Link>
-          <Link href="#" className="mr-4">
+          <Link to="#" className="mr-4">
             <FontAwesomeIcon
               icon={faYoutube}
               className="text-white text-2xl hover:text-gray-400"
             />
           </Link>
-          <Link href="#">
+          <Link to="#">
             <FontAwesomeIcon
               icon={faLinkedin}
               className="text-white text-2xl hover:text-gray-400"

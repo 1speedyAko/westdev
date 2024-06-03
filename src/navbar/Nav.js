@@ -3,24 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   
   faShoppingCart,
-  faAngleDown,
+  
 
 
 } from "@fortawesome/free-solid-svg-icons";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const toggleServicesDropdown = () => {
-    setIsServicesDropdownOpen(!isServicesDropdownOpen);
-  };
+  
 
   return (
     <nav className="bg-gray-800 fixed w-full z-10">
@@ -40,17 +37,17 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/about"
+                to="#"
                 className="text-gray-300 text-xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 About
               </Link>
               <Link
-                to="/gallery"
+                to="#"
                 className="text-gray-300 text-xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Gallery
               </Link>
               <Link
-                to="/shop"
+                to="#"
                 className="text-gray-300 text-xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <FontAwesomeIcon icon={faShoppingCart} className="mr-1" />
                 Shop

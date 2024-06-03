@@ -13,6 +13,7 @@ import { FcAbout } from "react-icons/fc";
 import { AiOutlineHome } from "react-icons/ai";
 import {GrGallery } from "react-icons/gr";
 import {BsHeart } from "react-icons/bs";
+import Products from "./Products"
 
 
 
@@ -39,7 +40,7 @@ const Shop = () => {
     <div className='flex '>
       <div
        className={`${open ? "w-72": "w-20"}
-        duration-300 lg:z-10  p-5 pt-8 bg-sky-600 relative`}>
+        duration-300 lg:z-10  p-5 pt-8 bg-emerald-300 relative`}>
       <AiOutlineArrowLeft 
       className={`absolute cursor-pointer -right-3 
       rounded-full top-9 w-7 border-2 border-gray-700 ${!open && 'rotate-180'}`}
@@ -58,7 +59,7 @@ const Shop = () => {
           {Menus.map((Menu, index) => (
             <li
               key={index}
-              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-lg items-center gap-x-4 
+              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-black-300 text-lg items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-2"} ${
                 index === 0 && "bg-light-white"
               } `}
@@ -72,10 +73,7 @@ const Shop = () => {
         </ul>
     </div>
       <div className='p-7 text-2xl font-semibold '>
-        <h1>some text here</h1>
-        <p className=''>paragraogh
-          sdfnsfafajf
-        </p>
+       <Products/>
       </div>
       
     </div>

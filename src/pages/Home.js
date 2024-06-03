@@ -6,17 +6,12 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import backgroundImage from "../assets/belgian.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBookmark,
-  faDog,
-  faUsers,
-  faClock,
-} from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { faUsers, faDog, faClock } from "@fortawesome/free-solid-svg-icons";
+
 import { useState } from "react";
 
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
+import { Paper } from "@mui/material";
 
 
 function Item(props) {
@@ -64,7 +59,7 @@ const HomePage = () => {
 
       <div className="p-20 px-10 bg-emerald-200 grid lg:grid-cols-3 md:grid-cols-2  gap-10 ">
         <div>
-          <h1 className="text-center"> background story</h1>
+          <h1 className="text-center text-xl"> background story</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -73,7 +68,7 @@ const HomePage = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-center"> background story</h1>
+          <h1 className="text-center text-xl"> background story</h1>
           <p>
             Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
             Congue quisque egestas diam in.
@@ -83,7 +78,7 @@ const HomePage = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-center"> background story</h1>
+          <h1 className="text-center text-xl"> background story</h1>
           <p>
             Egestas dui id ornare arcu odio. Imperdiet massa tincidunt nunc
             pulvinar sapien et. <br />
@@ -175,19 +170,19 @@ const HomePage = () => {
         </h1>
         <div className="grid lg:grid-cols-4 text-black text-center text-xl gap-7 ">
           <div>
-            <h1 className="text-2xl ">Dog Grooming</h1>
+            <h1 className="text-2xl text-bold">Dog Grooming</h1>
             <p >some text here about Dog Grooming</p>
           </div>
           <div>
-            <h1 className="text-2xl ">Dog Training</h1>
+            <h1 className="text-2xl text-bold">Dog Training</h1>
             <p>some text here about Dog Training </p>
           </div>
           <div>
-            <h1 className="text-2xl ">Handler Training</h1>
+            <h1 className="text-2xl text-bold">Handler Training</h1>
             <p>some text here about Handler Training</p>
           </div>
           <div>
-            <h1 className="text-2xl ">Dog Breeding</h1>
+            <h1 className="text-2xl text-bold">Dog Breeding</h1>
             <p>some text here about Dog Breeding </p>
           </div>
         </div>
