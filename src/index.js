@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Register from './shop/Register'
 import SignIn from "./shop/Login";
-import Shop from '../src/shop/Shop'
+import Shop from './shop/Shop'
 
 
 
