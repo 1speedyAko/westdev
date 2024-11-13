@@ -1,88 +1,84 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBookmark,
-  } from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const cardInfo = [
     {
-        usd:"$",
-        price: 10.8,
-        description:"per session",
-        info:"Dog Training",
-        sessions:"30 sessions",
-        service1:"Protection Work",
-        service2:"Behaviour And Socialization",
-        button:"Get Started"
+        ksh: "ksh",
+        price: "2,500",
+        description: "per session",
+        info: "Foundational and Basic Training",
+        sessions: "2 months",
+        services: [
+            "Socialization",
+            "Basic Obedience (sit, stay, come, down, and leave it)",
+            "Handling and grooming",
+            "House Training"
+        ],
+        button: "Get Started"
     },
     {
-        usd:"$",
-        price:15.9,
-        description:"per session",
-        info:"Handler Training",
-        sessions:"30 sessions",
-        service1:" Dog Management",
-        service2:"Dog Handling",
-        button:"Get Started"
-        
+        ksh: "ksh",
+        price: "2,500",
+        description: "per session",
+        info: "Intermediate Training",
+        sessions: "5 months",
+        services: [
+            "Advanced obedience (heel, wait, place, recall, and distraction training)",
+            "Impulse control",
+            "Continued socialization",
+            "Leash Training",
+            "Kennel Manners"
+        ],
+        button: "Get Started"
     },
     {
-        usd:"$",
-        price:20.2,
-        description:"per session",
-        info:"Dog Grooming",
-        sessions:"Upon Vist",
-        service1:"Full Grooming",
-        service2:" Basic Grooming",
-        button:"Get Started"
+        info: "Advanced Training",
+        sessions: "10 months",
+        services: [
+            "Functional Obedience (Integrate obedience commands into daily routines and real life scenarios)",
+            "Introduction To Protection Training",
+            "Confidence Building",
+            "Continued socialization and impulse control",
+            "Advanced Protection Training (bitework, controlled aggression, and threat recognition)",
+            "Real Life Scenario Training (simulate real life protection scenarios)",
+            "Physical Conditioning"
+        ],
+        button: "Get Started"
     },
-]
+];
 
-
-
-const card = ()=> {
-    return(
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 ">
-            {cardInfo.map((item) => (
-                 <div className="border border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900">
-                 <p className=" text-sm font-bold z-2">
-                   <span className=" top-0 left-0">{item.usd}</span>
-                   <span className="text-6xl pl-2">{item.price}</span>
-                   <span className="font-normal">{item.description}</span>
-                 </p>
-       
-                 <div className="py-10">
-                   <h3 className="text-xl font-bold pb-3">Dog Training</h3>
-                   <p className="leading-6">30 sessions</p>
-                 </div>
-                 <ul className="pb-10 space-y-4">
-                   <li className="flex items-center text-sm leading 6">
-                     <FontAwesomeIcon
-                       icon={faBookmark}
-                       className="text-blue-500 text-xl mr-2 hover:text-blue-700 "
-                     />
-                     Protection Work
-                   </li>
-                   <li className="flex items-center text-sm leading 6">
-                     <FontAwesomeIcon
-                       icon={faBookmark}
-                       className="text-blue-500 text-xl mr-2 hover:text-blue-700 "
-                     />
-                     Behaviour And Socialization
-                   </li>
-                 </ul>
-                 <Link
-                   to=""
-                   className="mt-8 block rounded-lg bg-blue-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-blue-700 ">
-                   Get started
-                 </Link>
-               </div>
-            
+const Card = () => {
+    return (
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8">
+            {cardInfo.map((item, index) => (
+                <div key={index} className="border relative border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900">
+                    {/* Add price and description if needed */}
+                    <div className="py-10">
+                        <h3 className="text-xl font-bold pb-3">{item.info}</h3>
+                        <p className="leading-6">{item.sessions}</p>
+                    </div>
+                    <ul className="pb-10 space-y-4">
+                        {item.services.map((service, idx) => (
+                            <li key={idx} className="flex items-center text-sm leading-6">
+                                <FontAwesomeIcon
+                                    icon={faBookmark}
+                                    className="text-blue-500 text-xl mr-2 hover:text-blue-700"
+                                />
+                                {service}
+                            </li>
+                        ))}
+                    </ul>
+                    <Link
+                        to=""
+                        className="mt-8 block rounded-lg bg-blue-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-blue-700">
+                        {item.button}
+                    </Link>
+                </div>
             ))}
-       
-      </div>
-    )
-}
+        </div>
+    );
+};
 
-export default card;
+export default Card;

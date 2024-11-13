@@ -37,7 +37,7 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="#"
+                to="/about"
                 className="text-gray-300 text-xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 About
               </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          <div className="flex md:hidden ">
+          <div className="flex md:hidden jusstify-end">
             <button
               type="button"
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none text-right duration-30"

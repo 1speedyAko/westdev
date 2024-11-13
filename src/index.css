@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ .secondary{
+    @apply text-2xl text-emerald-400
+}
+.btn{
+    @apply w-40 rounded-full text-center font-bold py-2 px-10 tracking-wider
+}

@@ -7,82 +7,73 @@ import ScrollTrigger from "react-scroll-trigger";
 import backgroundImage from "../assets/belgian.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faDog, faClock } from "@fortawesome/free-solid-svg-icons";
-
+import { ReactTyped } from "react-typed";
+import Testimonial from "./Testimonials";
+import dog from "../assets/dog.jpg"
+// import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import Carousel from "react-material-ui-carousel";
-import { Paper } from "@mui/material";
 
 
-function Item(props) {
-  return (
-    <Paper className='bg-emerald-200 text-center'>
-      <blockquote>
-      <p className="bg-emerald-200  text-black-500 dark:text-black">{props.item.description}</p>
-      </blockquote>
-      <figcaption class="bg-emerald-200 ">
-        <div class="text-black dark:text-black">{props.item.name}</div>
-        <div class="text-emerald-700 dark:text-emerald-500">{props.item.role}</div>
-      </figcaption>
-    </Paper>
-      
-  );
-}
+
+
+
 
 const HomePage = () => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <div className="w-full bg-slate-800">
+    <div className="w-full bg-slate-800 ">
       <Navbar />
 
       <div
         className="h-screen bg-no-repeat bg-cover aspect-w-4 aspect-h-5  "
         style={{ backgroundImage: `url(${backgroundImage})` }}>
-        <h1 className="text-gray-300 text-2xl capitalize font-bold pt-40 px-20 ">
-          Who are we?
+        <h1 className="text-gray-300 text-2xl capitalize font-bold pt-40 px-10 ">
+         {''}  <ReactTyped strings={['todays thursday?']} typeSpeed={100} loop />
         </h1>
-        <div className="block px-20 mt-10 font-medium text-slate-100">
-          <p>
+        <div className="block px-10 mt-5 font-medium text-slate-100 ">
+          <p className="">
             {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmo magna aliqua.
+            Welcome to West k9, where we believe in the ability of every dog to be well behaved and happy member of your family.
+            Founded in ____, our sole dedication is to provide top notch training services to dogs of all ages, breeds and temparaments.Our mission at WK9, is to enhance the bond between dogs and their owners through through effective compasionate techniques We strive to create a positive and a suppotive environment where dogs can learn and grow together.
+
             <br />
-            Ut enim ad minim veniam, i ut aliquip ex ea commodo consequat <br />{" "}
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.
-            <br /> Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.{" "}
+            At our facility , our team of expirinced and certified bring a wealth of knowledge and passion to every training session.The team endeavors to stay upto date with the most recent training methods and industry standards to ensure
+            we offer the finest possible guidance & support. 
+            
+            
+            {" "}
           </p>
         </div>
       </div>
 
-      <div className="p-20 px-10 bg-emerald-200 grid lg:grid-cols-3 md:grid-cols-2  gap-10 ">
+      <div className="p-10 px-10 bg-emerald-200 grid lg:grid-cols-3 md:grid-cols-2  gap-10 ">
         <div>
-          <h1 className="text-center text-xl"> background story</h1>
+          
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            
+            Central to our training philosophy is the belief that the reinforcement is key to successful and ethical dog training.
+            We work closely with you to develop customized training programs that fit your lifestyle and goals ensuring that both you and your dog 
+                    
           </p>
         </div>
         <div>
-          <h1 className="text-center text-xl"> background story</h1>
+          
           <p>
-            Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-            Congue quisque egestas diam in.
-            <br /> Praesent semper feugiat nibh sed. Viverra orci sagittis eu
-            volutpat odio facilisis. Mattis vulputate enim nulla aliquet
-           
+           {/*  image here, */}
+           <img className=""
+           src={dog}
+           alt="dog">
+           </img>
           </p>
         </div>
-        <div>
-          <h1 className="text-center text-xl"> background story</h1>
-          <p>
-            Egestas dui id ornare arcu odio. Imperdiet massa tincidunt nunc
-            pulvinar sapien et. <br />
-            Consequat nisl vel pretium lectus quam. Vestibulum mattis
+        <div className="mb-4">
+          
+          <p className="">
+          We prioritize understanding the unique needs of both our 
+          canines and human clients to provide training solutions that work best for your
+          and your dog. 
+ 
            
           </p>
         </div>
@@ -93,7 +84,7 @@ const HomePage = () => {
           onExit={() => setCounterOn(false)}
           className="">
           <div className="flex flex-col items-center ">
-            <p className="order-1 text-5xl text-emerald-400 ">Happy Clients</p>
+            <p className="order-1 text-5xl text-emerald-400 font-bold ">Happy Clients</p>
             <FontAwesomeIcon
               icon={faUsers}
               className="order-2 text-5xl text-blue-500 p-9"
@@ -117,7 +108,7 @@ const HomePage = () => {
           onExit={() => setCounterOn(false)}
           className="">
           <div className="flex flex-col items-center">
-            <p className="order-1 text-5xl text-emerald-400 ">Adoptions</p>
+            <p className="order-1 text-5xl text-emerald-400 font-bold">Adoptions</p>
             <FontAwesomeIcon
               icon={faDog}
               className="order-2 text-5xl text-blue-500 p-9"
@@ -141,7 +132,7 @@ const HomePage = () => {
           onExit={() => setCounterOn(false)}
           className="">
           <div className="flex flex-col items-center">
-            <p className="order-1 text-5xl text-emerald-400 text-center ">
+            <p className="order-1 text-5xl text-emerald-400 text-center font-bold">
               {" "}
               Years
             </p>
@@ -170,31 +161,61 @@ const HomePage = () => {
         </h1>
         <div className="grid lg:grid-cols-4 text-black text-center text-xl gap-7 ">
           <div>
-            <h1 className="text-2xl text-bold">Dog Grooming</h1>
-            <p >some text here about Dog Grooming</p>
+            <h1 className="font-bold">Dog Grooming</h1>
+            
+              <ul>
+                <li>Nail clipping</li>
+                <li>Full body wash</li>
+                <li></li>
+                <li></li>
+              </ul>
+          
           </div>
           <div>
-            <h1 className="text-2xl text-bold">Dog Training</h1>
-            <p>some text here about Dog Training </p>
+            <h1 className="font-bold">Dog Training</h1>
+            
+            <ul>
+                <li>Foundational Training</li>
+                <li>Basic Training</li>
+                <li>Intermidiate Training</li>
+                <li>Advanced Training</li>
+              </ul>
+            
           </div>
           <div>
-            <h1 className="text-2xl text-bold">Handler Training</h1>
-            <p>some text here about Handler Training</p>
+            <h1 className="font-bold">Handler Training</h1>
+            
+            <ul>
+                <li>Basics of dog Training</li> 
+                <li>Understanding behaviour and communication</li>
+                <li>Practical Training techniques</li>
+              </ul>
+           
           </div>
           <div>
-            <h1 className="text-2xl text-bold">Dog Breeding</h1>
-            <p>some text here about Dog Breeding </p>
+            <h1 className="font-bold">Dog Breeding</h1>
+            <p className="text-center">
+            <ul>
+                <li>Stud services</li>
+                <li>Puppy rehoming</li>
+                <li></li>
+                <li></li>
+              </ul>
+             </p>
           </div>
         </div>
+        {/* <div className="text-center mt-10 pt-4">
+          <button className="bg-gray-500 btn"> read more</button>
+        </div> */}
       </div>
       <div className="bg-slate-800  text-white pb-10">
         {/*cards go here*/}
         <section>
           {/*card 1*/}
           <div className="text-center py-20">
-            <h4 className="uppercase font-bold text-emerald-500">pricing</h4>
+            <h4 className="uppercase font-bold text-emerald-500">Hey!</h4>
             <h1 className="capitalize text-3xl font-bold">
-              Get affordable pricing
+              come lets help you
             </h1>
           </div>
           <div>
@@ -203,46 +224,10 @@ const HomePage = () => {
           
         </section>
       </div>
-       <div className='h-3/4'>
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 ">
-          <div>
-            <img 
-            className="w-full"
-            src="https://images.pexels.com/photos/1906153/pexels-photo-1906153.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="dog"
-            />
-          </div>
-          <div className="bg-emerald-200 w-full sm:h-25">
-            <h1 className="text-center text-3xl font-bold text-black pt-20 pb-10">
-              Testimonials
-            </h1>
-            <Carousel className="bg-emerald-200 ">
-              {[
-                {
-                  name: "Fred Oguta",
-                  description:"some txt here about customer feedback and satisfaction",
-                    
-                  role:"Engineer",
-
-                },
-                {
-                  name: "Collins Omae",
-                  description: "some txt here about customer feedback and satisfaction",
-                  role:"Driver",
-                },
-                {
-                  name: "John Doe",
-                  description: "some txt here about customer feedback and satisfacti",
-                  role:"Rancher",
-                }
-
-              ].map((item, i) => (
-                <Item key={i} item={item} />
-              ))}
-            </Carousel>
-          </div>
-        </div>
-       </div>
+      <div>
+        
+      </div>
+      < Testimonial/>
       <Footer />
     </div>
   );

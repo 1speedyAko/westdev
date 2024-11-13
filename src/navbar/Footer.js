@@ -1,9 +1,9 @@
 import React from "react";
-import { faHome, faInfoCircle, faShoppingCart, faImages, faPhone, faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faInfoCircle,  faPhone, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom"; // Corrected import statement
-
+// faShoppingCart, faImages,
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -20,12 +20,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="#" className="hover:text-gray-400">
+                <Link to="/about" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
                   About
                 </Link>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <Link to="#" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                   Shop
@@ -36,7 +36,7 @@ const Footer = () => {
                   <FontAwesomeIcon icon={faImages} className="mr-2" />
                   Gallery
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           {/* Services */}
@@ -75,7 +75,9 @@ const Footer = () => {
                 className="py-2 px-auto first-line:rounded-l-md focus:outline-none text-black rounded-l-lg "
               />
               <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-auto rounded-r-md focus:outline-none">
-                Subscribe
+                <Link to='#'>
+                 Subscribe
+                </Link>
               </button>
             </form>
           </div>

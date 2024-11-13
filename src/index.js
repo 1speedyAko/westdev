@@ -4,7 +4,7 @@ import "./index.css";
 // import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import Gallery from "./pages/Gallery";
-// import About from "./pages/About";
+import About from "./pages/About";
 import Home from "./pages/Home";
 // import Register from './shop/Register'
 // import SignIn from "./shop/Login";
@@ -17,10 +17,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-  // {
-  //   path: "about",
-  //   element: <About />,
-  // },
+  {
+    path: "about",
+    element: <About />,
+  },
   // {
   //   path: "services",
   //   element: <App />,
