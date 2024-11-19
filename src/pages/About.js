@@ -77,8 +77,10 @@ const AboutPage = () => {
 
       <div className=" py-20 z-8 w-full text-white pb-10 bg-slate-800 px-10">
         <h1 className="text-center text-4xl mb-4 py-10 font-bold text-emerald-600">About page</h1>
-        <div className="3/4-h text-center px-3">
-          <p className="container">
+        <div className="grid 3/4-h text-center px-3 lg:grid-cols-2 md:grid-cols-2 gap-4">
+        <div className=" gap-3">
+          <h2 className="text-3xl ">Why us?</h2>
+        <p className="container mt-4">
             At WK9, we understand that grooming is an esseential part of your dogs overall health and well-being.
             Our comprehensive grooming services are designed to keep your dog looking and feeling their best while ensuring a comftable
             and stress free for both you and your pet.
@@ -86,6 +88,14 @@ const AboutPage = () => {
             and communication between you and your dog.
             At WK9, we specialize in providing top notch handler training to ensure that your dog is well behaved, obedient and you have no problem during engagement.
           </p>
+        </div>
+          
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1601758124096-1fd661873b95?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="dog pet"
+            />
+          </div>
         </div>
         {/* <div className="text-center text-4xl mb-4 text-bold py-10">
           <h1>Meet Our Team</h1>

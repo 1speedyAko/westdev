@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import Gallery from "./pages/Gallery";
+import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Home from "./pages/Home";
 // import Register from './shop/Register'
@@ -30,10 +30,10 @@ const router = createBrowserRouter([
   //   // element:<Shop/>
   //   element: <h1>Hello world</h1>
   // },
-  // {
-  //   path:"gallery",
-  //   element:<Gallery/>
-  // },
+  {
+    path:"gallery",
+    element:<Gallery/>
+  },
   // {
   //   path:"signIn",
   //   element:<SignIn/>

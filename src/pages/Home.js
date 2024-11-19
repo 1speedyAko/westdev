@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faDog, faClock } from "@fortawesome/free-solid-svg-icons";
 import { ReactTyped } from "react-typed";
 import Testimonial from "./Testimonials";
-import dog from "../assets/dog.jpg"
+
 // import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -27,26 +27,37 @@ const HomePage = () => {
       <Navbar />
 
       <div
-        className="h-screen bg-no-repeat bg-cover aspect-w-4 aspect-h-5  "
-        style={{ backgroundImage: `url(${backgroundImage})` }}>
-        <h1 className="text-gray-300 text-2xl capitalize font-bold pt-40 px-10 ">
-         {''}  <ReactTyped strings={['todays thursday?']} typeSpeed={100} loop />
-        </h1>
-        <div className="block px-10 mt-5 font-medium text-slate-100 ">
-          <p className="">
-            {" "}
-            Welcome to West k9, where we believe in the ability of every dog to be well behaved and happy member of your family.
-            Founded in ____, our sole dedication is to provide top notch training services to dogs of all ages, breeds and temparaments.Our mission at WK9, is to enhance the bond between dogs and their owners through through effective compasionate techniques We strive to create a positive and a suppotive environment where dogs can learn and grow together.
+          className="h-screen bg-no-repeat bg-cover aspect-w-4 aspect-h-5 inset-0 relative"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            <br />
-            At our facility , our team of expirinced and certified bring a wealth of knowledge and passion to every training session.The team endeavors to stay upto date with the most recent training methods and industry standards to ensure
-            we offer the finest possible guidance & support. 
-            
-            
-            {" "}
-          </p>
+          {/* Content */}
+          <div className="relative z-10">
+            <h1 className="text-gray-300 text-2xl capitalize font-bold pt-40 px-10">
+              <ReactTyped strings={['Who are we ?']} typeSpeed={100} loop />
+            </h1>
+            <div className="block px-10 mt-5 font-medium text-slate-100">
+              <p>
+                Welcome to West k9, where we believe in the ability of every dog to be
+                a well-behaved and happy member of your family. Founded in ____, our
+                sole dedication is to provide top-notch training services to dogs of
+                all ages, breeds, and temperaments. Our mission at WK9 is to enhance
+                the bond between dogs and their owners through effective, compassionate
+                techniques. We strive to create a positive and supportive environment
+                where dogs can learn and grow together.
+                <br />
+                At our facility, our team of experienced and certified trainers brings
+                a wealth of knowledge and passion to every training session. The team
+                endeavors to stay up to date with the most recent training methods and
+                industry standards to ensure we offer the finest possible guidance &
+                support.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+
 
       <div className="p-10 px-10 bg-emerald-200 grid lg:grid-cols-3 md:grid-cols-2  gap-10 ">
         <div>
@@ -62,7 +73,7 @@ const HomePage = () => {
           <p>
            {/*  image here, */}
            <img className=""
-           src={dog}
+           src='https://media.istockphoto.com/id/918538458/photo/two-boerboel-puppies-relaxing-together-at-the-park.webp?a=1&b=1&s=612x612&w=0&k=20&c=p4e43MvO2vAVgS_oti0Zsiy98f5jBj6ykTPBv6wfbeQ='
            alt="dog">
            </img>
           </p>

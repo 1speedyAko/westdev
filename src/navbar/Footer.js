@@ -4,9 +4,10 @@ import { faFacebook, faInstagram, faTwitter, faYoutube, faLinkedin } from "@fort
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom"; // Corrected import statement
 // faShoppingCart, faImages,
+import { faImages } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 text-white py-8 pb-0">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* Useful Links */}
@@ -30,13 +31,13 @@ const Footer = () => {
                   <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                   Shop
                 </Link>
-              </li>
+              </li> */}
               <li className="mb-2">
-                <Link to="#" className="hover:text-gray-400">
+                <Link to="/gallery" className="hover:text-gray-400">
                   <FontAwesomeIcon icon={faImages} className="mr-2" />
                   Gallery
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           {/* Services */}
