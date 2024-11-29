@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter,  RouterProvider } from "react-router-dom";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Form from "./components/Carousel/Form";
 // import Register from './shop/Register'
 // import SignIn from "./shop/Login";
 // import Shop from './shop/Shop'
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path:"gallery",
     element:<Gallery/>
+  },
+  {
+    path:"form",
+    element:<Form/>
   },
   // {
   //   path:"signIn",

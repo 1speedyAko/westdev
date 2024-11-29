@@ -54,7 +54,6 @@ const Card = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8">
             {cardInfo.map((item, index) => (
                 <div key={index} className="border relative border-gray-500 shadow-lg p-8 rounded-2xl bg-slate-900">
-                    {/* Add price and description if needed */}
                     <div className="py-10">
                         <h3 className="text-xl font-bold pb-3">{item.info}</h3>
                         <p className="leading-6">{item.sessions}</p>
@@ -71,7 +70,7 @@ const Card = () => {
                         ))}
                     </ul>
                     <Link
-                        to=""
+                        to={`/form?info=${encodeURIComponent(item.info)}`}
                         className="mt-8 block rounded-lg bg-blue-500 px-6 py-4 text-center text-sm font-semibold leading-4 shadow-md hover:bg-blue-700">
                         {item.button}
                     </Link>
