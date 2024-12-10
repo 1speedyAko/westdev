@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import profile from "../assets/profile.png"
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-white font-bold text-lg">WestK9</span>
+            <span className="text-white font-bold text-lg"><img src={profile} alt='logo' width={90}/></span>
           </div>
 
           {/* Desktop Navigation Links */}

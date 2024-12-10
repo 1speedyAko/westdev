@@ -22,7 +22,7 @@ const Form = () => {
                     </h3>
                         <label
                             htmlFor="dogBreed"
-                            className="block text-sm font-medium text-gray-700">
+                            className="block text-sm font-medium text-center text-gray-700">
                             Dog Breed
                         </label>
                         <input
@@ -38,7 +38,7 @@ const Form = () => {
                     <div>
                         <label
                             htmlFor="age"
-                            className="block text-sm font-medium text-gray-700">
+                            className="block text-sm font-medium text-center text-gray-700">
                             Dog Age
                         </label>
                         <input
@@ -56,7 +56,7 @@ const Form = () => {
                     <div>
                         <label
                             htmlFor="comments"
-                            className="block text-sm font-medium text-gray-700">
+                            className="block text-sm font-medium text-center text-gray-700">
                             Comments
                         </label>
                         <textarea
